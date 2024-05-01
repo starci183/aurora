@@ -1,6 +1,6 @@
 "use client"
 
-import { LayoutContext } from "@/app/layout"
+import { LayoutContext } from "@/app/_hooks"
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline"
 import { Button, Link, NavbarBrand, NavbarContent, NavbarItem, Navbar as NextUINavbar, Image, Switch } from "@nextui-org/react"
 import { useContext } from "react"
