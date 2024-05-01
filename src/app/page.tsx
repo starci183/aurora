@@ -13,7 +13,7 @@ const Page = () => {
       </div>
       <Spacer y={36} />
       <div className="px-6 mx-auto max-w-[1080px]">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2 gap-2">
           <div className="text-4xl font-semibold">
             Lorem ipsum dolor sit
           </div>
@@ -28,7 +28,7 @@ const Page = () => {
       </div>
       <Spacer y={12} />
       <div className="px-6 mx-auto max-w-[1080px]">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2 gap-2">
           <div className="text-4xl font-semibold">
             Lorem ipsum dolor sit
           </div>
@@ -43,7 +43,7 @@ const Page = () => {
       </div>
       <Spacer y={12} />
       <div className="px-6 mx-auto max-w-[1080px]">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2 gap-2">
           <div className="text-4xl font-semibold">
             Lorem ipsum dolor sit
           </div>
@@ -63,7 +63,7 @@ const Page = () => {
             Lorem ipsum dolor sit
           </div>
           <Spacer y={12} />
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             <div>
               <Image removeWrapper src="/base-image-2.webp" />
               <Spacer y={2} />
@@ -94,7 +94,7 @@ const Page = () => {
             Lorem ipsum dolor sit
           </div>
           <Spacer y={12} />
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             <div>
               <Image removeWrapper src="/base-image-2.webp" />
               <Spacer y={2} />

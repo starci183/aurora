@@ -6,9 +6,9 @@ export const Footer = () => {
         <>
             <Divider />
             <div className="px-6 py-12">
-                <div className="flex items-center justify-between">
+                <div className="md:flex grid gap-6 items-center justify-between">
                     <Image className="w-48 h-48" removeWrapper src="aurora-logo-full.svg" />
-                    <div className="flex gap-12">
+                    <div className="grid md:flex gap-4 gap-12">
                         <div>
                             <div className="font-bold">
                                 Nguyen Van Tu Cuong
