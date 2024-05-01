@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
@@ -7,23 +7,25 @@ import { useContext } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
 import { LayoutContext, LayoutContextProvider } from "./_hooks";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const font = Nunito({ subsets: ["latin"] });
 
-const WrappedLayout = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
-  const { states } = useContext(LayoutContext)!
-  const { darkModeState } = states
-  const [darkMode] = darkModeState
+const WrappedLayout = ({ children }: { children: React.ReactNode }) => {
+  const { states } = useContext(LayoutContext)!;
+  const { darkModeState } = states;
+  const [darkMode] = darkModeState;
 
   return (
     <html lang="en" className={darkMode ? "dark" : "light"}>
       <body className={font.className}>
+        <GoogleAnalytics gaId="G-S39KVY2J5X" />
         <NextUIProvider>
-          <ScrollToTop className="!rounded-full !grid !place-items-center !w-12 !h-12 !right-6 !bg-content1 !z-20" smooth component={<ArrowUpIcon className="text-primary w-8 h-8" />} />
+          <ScrollToTop
+            className="!rounded-full !grid !place-items-center !w-12 !h-12 !right-6 !bg-content1 !z-20"
+            smooth
+            component={<ArrowUpIcon className="text-primary w-8 h-8" />}
+          />
           <Navbar />
           {children}
           <Footer />
@@ -31,20 +33,14 @@ const WrappedLayout = ({
       </body>
     </html>
   );
-}
+};
 
-const Layout = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <LayoutContextProvider>
-      <WrappedLayout>
-        {children}
-      </WrappedLayout>
+      <WrappedLayout>{children}</WrappedLayout>
     </LayoutContextProvider>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
