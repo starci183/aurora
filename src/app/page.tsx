@@ -26,7 +26,7 @@ const Page = () => {
             Đồng hành cùng trẻ tự kỷ - Thấu hiểu và hỗ trợ
           </div>
           <Spacer y={24} />
-          <div className="px-6 flex gap-12">
+          <div className="px-6 grid md:flex gap-12">
             <div className="min-w-[300px]">
               <Avatar
                 isBordered
@@ -76,7 +76,7 @@ const Page = () => {
           <Spacer y={12} />
           <Divider/>
           <Spacer y={12} />
-          <div className="px-6 flex gap-12">
+          <div className="px-6 grid md:flex gap-12">
             <div className="min-w-[300px]">
               <Avatar
                 isBordered
