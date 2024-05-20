@@ -1,5 +1,5 @@
 "use client";
-import { Nunito } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { Footer, Navbar } from "./_components";
@@ -9,7 +9,7 @@ import { ArrowUpIcon } from "@heroicons/react/24/outline";
 import { LayoutContext, LayoutContextProvider } from "./_hooks";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const font = Nunito({ subsets: ["latin"] });
+const font = Open_Sans({ subsets: ["latin"] });
 
 const WrappedLayout = ({ children }: { children: React.ReactNode }) => {
   const { states } = useContext(LayoutContext)!;
