@@ -73,9 +73,7 @@ const Page = () => {
               tác xã hội.`
             </div>
           </div>
-          <Spacer y={12} />
-          <Divider/>
-          <Spacer y={12} />
+          <Spacer y={24} />
           <div className="px-6 grid md:flex gap-12">
             <div className="min-w-[300px]">
               <Avatar
