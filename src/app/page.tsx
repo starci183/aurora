@@ -132,31 +132,29 @@ const Page = () => {
         <Spacer y={36} />
         <div className="px-6 max-w-[1280px] m-auto">
           <div className="text-2xl font-bold">Sứ mệnh của chúng tôi</div>
-          <Spacer y={6} />
-          <div className="px-6">
-            <div className="text-justify max-w-[1280px] m-auto italic text-foreground-500">
-              `Có vẻ trừu tượng, nhưng với con số trẻ tự kỷ ở riêng Việt Nam
-              hiện nay và được dự kiến sẽ tiếp tục tăng trong tương lai báo hiệu
-              nếu không có sự hỗ trợ và sản phẩm đúng đắn thì tương lai những
-              đứa trẻ nhóm này khi lớn lên sẽ là 1 gánh nặng và đồng thời sẽ là
-              1 tương lai tăm tối và đầy khó khăn cho chính cuộc sống của chúng
-              và người thân, xã hội. Aurora ra đời với sứ mệnh và hy vọng hỗ trợ
-              trẻ tự kỷ trên con đường phát triển cho cuộc sống mai sau, 1 tương
-              lai tươi sáng và khai thác được tiềm năng và sự sáng tạo của các
-              em chứ không rơi vào lối mòn dẫn đến 1 tương lai tối tăm với những
-              khó khăn và chông gai`
-            </div>
-            <Spacer y={4} />
-            <div className="flex w-full gap-4">
-              <div className="w-1 bg-divider" />
-              <User
-                name="Qy Cận"
-                description="C.E.O"
-                avatarProps={{
-                  src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-                }}
-              />
-            </div>
+          <Spacer y={12} />
+          <div className="text-justify max-w-[1280px] m-auto italic text-foreground-500">
+            `Có vẻ trừu tượng, nhưng với con số trẻ tự kỷ ở riêng Việt Nam hiện
+            nay và được dự kiến sẽ tiếp tục tăng trong tương lai báo hiệu nếu
+            không có sự hỗ trợ và sản phẩm đúng đắn thì tương lai những đứa trẻ
+            nhóm này khi lớn lên sẽ là 1 gánh nặng và đồng thời sẽ là 1 tương
+            lai tăm tối và đầy khó khăn cho chính cuộc sống của chúng và người
+            thân, xã hội. Aurora ra đời với sứ mệnh và hy vọng hỗ trợ trẻ tự kỷ
+            trên con đường phát triển cho cuộc sống mai sau, 1 tương lai tươi
+            sáng và khai thác được tiềm năng và sự sáng tạo của các em chứ không
+            rơi vào lối mòn dẫn đến 1 tương lai tối tăm với những khó khăn và
+            chông gai`
+          </div>
+          <Spacer y={4} />
+          <div className="flex w-full gap-4">
+            <div className="w-1 bg-divider" />
+            <User
+              name="Qy Cận"
+              description="C.E.O"
+              avatarProps={{
+                src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+              }}
+            />
           </div>
         </div>
       </div>
