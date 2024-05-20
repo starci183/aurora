@@ -16,17 +16,17 @@ const Page = () => {
           }}
         />
         <Spacer y={12} />
-        <div className="text-4xl text-center">
+        <div className="text-4xl text-center px-6">
           <span className="text-primary font-semibold">Aurora</span> - Ánh dương
           bình minh cho mọi đứa trẻ
         </div>
         <Spacer y={36} />
-        <div className="px-6 max-w-[1280px] m-auto">
-          <div className="text-2xl font-bold">
+        <div>
+          <div className="text-2xl font-bold max-w-[1280px] m-auto px-6">
             Đồng hành cùng trẻ tự kỷ - Thấu hiểu và hỗ trợ
           </div>
           <Spacer y={24} />
-          <div className="px-6 grid md:flex gap-12">
+          <div className="px-6 grid md:flex gap-12 max-w-[1280px] m-auto">
             <div className="min-w-[300px]">
               <Avatar
                 isBordered
@@ -45,7 +45,7 @@ const Page = () => {
                   </Link>
                 </div>
                 <Spacer y={4} />
-                <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex">
+                <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex ">
                   <div>
                     <div className="flex gap-2">
                       <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
@@ -74,54 +74,58 @@ const Page = () => {
             </div>
           </div>
           <Spacer y={24} />
-          <div className="px-6 grid md:flex gap-12">
-            <div className="min-w-[300px]">
-              <Avatar
-                isBordered
-                className="w-40 h-40"
-                src="https://askany.com/_next/image?url=https%3A%2F%2Fd2czqxs5dso3qv.cloudfront.net%2Fexperts%2F1310b339-3c76-4e15-acd5-ce1437cc1841.jpeg%3Fformat%3Dwebp&w=3840&q=75"
-              />
-              <Spacer y={4} />
-              <div>
-                <div className="text-xl">
-                  Chị{" "}
-                  <Link
-                    className="font-semibold text-xl text-foreground"
-                    href="https://askany.com/tam-ly-tre-em/1692609864640149"
-                  >
-                    Nguyễn Hải Uyên
-                  </Link>
-                </div>
+          <div className="bg-content2 py-12">
+            <div className="px-6 grid md:flex gap-12 max-w-[1280px] m-auto">
+              <div className="min-w-[300px]">
+                <Avatar
+                  isBordered
+                  className="w-40 h-40"
+                  src="https://askany.com/_next/image?url=https%3A%2F%2Fd2czqxs5dso3qv.cloudfront.net%2Fexperts%2F1310b339-3c76-4e15-acd5-ce1437cc1841.jpeg%3Fformat%3Dwebp&w=3840&q=75"
+                />
                 <Spacer y={4} />
-                <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex">
-                  <div>
-                    <div className="flex gap-2">
-                      <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
-                      <div>
-                        Chuyên viên trẻ em tại bệnh viện Nhi đồng 2
+                <div>
+                  <div className="text-xl">
+                    Chị{" "}
+                    <Link
+                      className="font-semibold text-xl text-foreground"
+                      href="https://askany.com/tam-ly-tre-em/1692609864640149"
+                    >
+                      Nguyễn Hải Uyên
+                    </Link>
+                  </div>
+                  <Spacer y={4} />
+                  <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex">
+                    <div>
+                      <div className="flex gap-2">
+                        <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
+                        <div>Chuyên viên trẻ em tại bệnh viện Nhi đồng 2</div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className="flex gap-2">
-                      <BriefcaseIcon className="w-4 h-4 mt-0.5 min-w-4" />
-                      <div>Trưởng phòng tư vấn tâm lý tại trung tâm ứng dụng tâm lý JobWay</div>
+                    <div>
+                      <div className="flex gap-2">
+                        <BriefcaseIcon className="w-4 h-4 mt-0.5 min-w-4" />
+                        <div>
+                          Trưởng phòng tư vấn tâm lý tại trung tâm ứng dụng tâm
+                          lý JobWay
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="text-foreground-500 italic">
-              `Có một số đặc điểm đặc biệt trong cách mà các em thể hiện sự
-              thông minh, thường là thông qua những lĩnh vực như tính toán nhanh
-              và thiên về sự tập trung vào một lĩnh vực mà họ yêu thích, thường
-              không thích tương tác xã hội và việc học từ người khác có thể diễn
-              ra chậm hơn. Đối với trẻ tự kỷ, hình ảnh và màu sắc có vai trò
-              quan trọng trong việc thu hút và tạo điều kiện cho tương tác hiệu
-              quả. Vì vậy, việc tạo ra các hình ảnh và sử dụng màu sắc sáng sẽ
-              giúp tránh sự mất tập trung. Đồng thời, cần hạn chế sử dụng những
-              hình thức, vật dụng có thể gây thương tích, thay vào đó, ưu tiên
-              sử dụng đồ chơi bằng gỗ được mài tròn và không sắc nhọn.`
+              <div className="text-foreground-500 italic">
+                `Có một số đặc điểm đặc biệt trong cách mà các em thể hiện sự
+                thông minh, thường là thông qua những lĩnh vực như tính toán
+                nhanh và thiên về sự tập trung vào một lĩnh vực mà họ yêu thích,
+                thường không thích tương tác xã hội và việc học từ người khác có
+                thể diễn ra chậm hơn. Đối với trẻ tự kỷ, hình ảnh và màu sắc có
+                vai trò quan trọng trong việc thu hút và tạo điều kiện cho tương
+                tác hiệu quả. Vì vậy, việc tạo ra các hình ảnh và sử dụng màu
+                sắc sáng sẽ giúp tránh sự mất tập trung. Đồng thời, cần hạn chế
+                sử dụng những hình thức, vật dụng có thể gây thương tích, thay
+                vào đó, ưu tiên sử dụng đồ chơi bằng gỗ được mài tròn và không
+                sắc nhọn.`
+              </div>
             </div>
           </div>
         </div>
@@ -144,7 +148,7 @@ const Page = () => {
             </div>
             <Spacer y={4} />
             <div className="flex w-full gap-4">
-              <div className="w-1 bg-divider"/>
+              <div className="w-1 bg-divider" />
               <User
                 name="Qy Cận"
                 description="C.E.O"
