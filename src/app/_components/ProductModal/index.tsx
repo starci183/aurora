@@ -46,14 +46,21 @@ export const ProductModal = ({
 }: ProductModalProps) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
+  let timeout: NodeJS.Timeout;
+
   return (
     <>
-      <Card isPressable onTouchStart={onOpen} onMouseEnter={onOpen}>
+      <Card
+        isPressable
+        onMouseEnter={() => {
+          timeout = setTimeout(onOpen, 1000);
+        }}
+        onMouseLeave={() => clearTimeout(timeout)}
+      >
         <CardBody className="p-0 grid place-content-center aspect-square overflow-hidden">
           <Image isZoomed src={imageUrl} />
         </CardBody>
       </Card>
-
       <Modal
         scrollBehavior="inside"
         isOpen={isOpen}
@@ -110,33 +117,32 @@ export const ProductModal = ({
                       <div className="text-sm">{description}</div>
                     </div>
                     <Spacer y={4} />
-                      <div className="text-foreground-500 text-xs"> Đánh giá </div>
-                      <Spacer y={1} />
-                      <div className="flex gap-2 items-end">
-                        <Rating
-                          fillIcon={
-                            <StarSolidIcon
-                              className="inline text-amber-400"
-                              width={20}
-                              height={20}
-                            />
-                          }
-                          emptyIcon={
-                            <StarIcon
-                              className="inline"
-                              width={20}
-                              height={20}
-                            />
-                          }
-                          initialValue={5}
-                          transition
-                          readonly={true}
-                        />
-                        <div className="text-sm text-foreground-500">
-                          234 đánh giá (4.93/5)
-                        </div>
+                    <div className="text-foreground-500 text-xs">
+                      {" "}
+                      Đánh giá{" "}
+                    </div>
+                    <Spacer y={1} />
+                    <div className="flex gap-2 items-end">
+                      <Rating
+                        fillIcon={
+                          <StarSolidIcon
+                            className="inline text-amber-400"
+                            width={20}
+                            height={20}
+                          />
+                        }
+                        emptyIcon={
+                          <StarIcon className="inline" width={20} height={20} />
+                        }
+                        initialValue={5}
+                        transition
+                        readonly={true}
+                      />
+                      <div className="text-sm text-foreground-500">
+                        234 đánh giá (4.93/5)
                       </div>
-                      <Spacer y={4} />
+                    </div>
+                    <Spacer y={4} />
                     <div>
                       <div className="text-xs text-foreground-500">
                         Tình trạng
