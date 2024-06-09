@@ -200,7 +200,7 @@ const Page = () => {
       <div className="px-6 max-w-[1280px] m-auto">
         <div className="text-2xl font-bold">Sản phẩm của chúng tôi</div>
         <Spacer y={12} />
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid sm:grid-cols-3 gap-4">
           {products.map(({ category, description, imageUrl, title, key, price }) => (
             <ProductModal
               key={key}
