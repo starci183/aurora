@@ -48,7 +48,7 @@ export const ProductModal = ({
 
   return (
     <>
-      <Card isPressable onPress={onOpen}>
+      <Card isPressable onTouchStart={onOpen} onMouseEnter={onOpen}>
         <CardBody className="p-0 grid place-content-center aspect-square overflow-hidden">
           <Image isZoomed src={imageUrl} />
         </CardBody>
