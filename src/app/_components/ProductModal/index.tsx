@@ -44,7 +44,7 @@ export const ProductModal = ({
   description,
   price,
 }: ProductModalProps) => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
   let timeout: NodeJS.Timeout;
 
@@ -53,7 +53,7 @@ export const ProductModal = ({
       <Card
         isPressable
         onMouseEnter={() => {
-          timeout = setTimeout(onOpen, 1000);
+          timeout = setTimeout(onOpen, 500);
         }}
         onClick={() => {
           onOpen();
@@ -72,7 +72,14 @@ export const ProductModal = ({
         size="4xl"
         className={className}
       >
-        <ModalContent>
+        <ModalContent
+        // onMouseOver={() => {
+        //   setTimeout(onClose, 1_000);
+        // }}
+        // onMouseEnter={() => {
+        //   clearTimeout(timeout);
+        // }}
+        >
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
