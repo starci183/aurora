@@ -55,6 +55,7 @@ export const ProductModal = ({
         onMouseEnter={() => {
           timeout = setTimeout(onOpen, 1000);
         }}
+        onClick={onOpen}
         onMouseLeave={() => clearTimeout(timeout)}
       >
         <CardBody className="p-0 grid place-content-center aspect-square overflow-hidden">
