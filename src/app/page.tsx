@@ -216,7 +216,7 @@ const Page = () => {
       </div>
       <Spacer y={36} />
       <div className="px-6 max-w-[1280px] m-auto">
-        <div className="text-2xl font-bold">Sứ mệnh của chúng tôi</div>
+        <div className="text-2xl font-bold">Sứ mệnh</div>
         <Spacer y={12} />
         <div className="text-justify max-w-[1280px] m-auto italic text-foreground-500">
           `Có vẻ trừu tượng, nhưng với con số trẻ tự kỷ ở riêng Việt Nam hiện

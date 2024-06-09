@@ -102,6 +102,7 @@ export const ProductModal = ({
                       <div className="text-xs text-foreground-500">
                         Tên sản phẩm
                       </div>
+                      <Spacer y={1} />
                       <div className="text-sm">{title}</div>
                     </div>
                     <Spacer y={4} />
@@ -109,11 +110,13 @@ export const ProductModal = ({
                       <div className="text-xs text-foreground-500">
                         Thể loại
                       </div>
+                      <Spacer y={1} />
                       <div className="text-sm">{category}</div>
                     </div>
                     <Spacer y={4} />
                     <div>
                       <div className="text-xs text-foreground-500">Mô tả</div>
+                      <Spacer y={1} />
                       <div className="text-sm">{description}</div>
                     </div>
                     <Spacer y={4} />
