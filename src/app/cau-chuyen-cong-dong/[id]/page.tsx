@@ -14,18 +14,18 @@ type StoryInfo = {
 const Page = () => {
   const { id } = useParams();
 
-  const stories: Record<Story, StoryInfo> = {
-    "do-choi-co-tac-đong-den-su-phat-trien-cua-tre-tu-ky-nhu-the-nao": {
-      title: "Đồ chơi có tác động đến sự phát triển của trẻ tự kỷ như thế nào?",
-      html: (
-        <div>
-          <div className="text-xl font-semibold">
-            I. Tại sao nên sử dụng đồ chơi cho trẻ tự kỷ?
-          </div>
-        </div>
-      ),
-    },
-  };
+  // const stories: Record<Story, StoryInfo> = {
+  //   "do-choi-co-tac-đong-den-su-phat-trien-cua-tre-tu-ky-nhu-the-nao": {
+  //     title: "Đồ chơi có tác động đến sự phát triển của trẻ tự kỷ như thế nào?",
+  //     html: (
+  //       <div>
+  //         <div className="text-xl font-semibold">
+  //           I. Tại sao nên sử dụng đồ chơi cho trẻ tự kỷ?
+  //         </div>
+  //       </div>
+  //     ),
+  //   },
+  // };
 
   return <div />;
 };
