@@ -20,13 +20,18 @@ export const Navbar = () => {
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem isActive>
-                    <Link href="#">
+                    <Link href="/">
                         Trang chủ
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#" aria-current="page">
-                        Sản phẩm chúng tôi
+                    <Link color="foreground" href="/san-pham" aria-current="page">
+                        Sản phẩm
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="/cau-chuyen-cong-dong/do-choi-co-tac-dong-den-su-phat-trien-cua-tre-tu-ky-nhu-the-nao">
+                        Câu chuyện cộng đồng
                     </Link>
                 </NavbarItem>
                 <NavbarItem>

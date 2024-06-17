@@ -16,7 +16,7 @@ const Page = () => {
       key: 0,
       title: "Đập chuột phát nhạc",
       imageUrl:
-        "https://bizweb.dktcdn.net/thumb/1024x1024/100/347/752/products/z4340780427704-8f36fd76df66556780ff6c78e2c2770f.jpg?v=1683949667907",
+        "dapchuothamsterphatnhac.png",
       category: "Đồ chơi giúp trẻ tập trung chú ý, có âm thanh",
       description: `Bộ đồ chơi ĐẬP CHUỘT HAMSTER PHÁT NHẠC sẽ là món quà tuyệt vời dành cho bé để tránh xa khỏi “cơn nghiện” smartphone. Chúng có thể giúp bé luyện tập phản xạ nhanh tay nhanh mắt và tập trung phát triển não bộ toàn diện. Được tích hợp nhiều chức năng như 6 bài đồng giao, 5 hiệu ứng âm thanh dễ thương về chủ đề giao thông, động vật, thời tiết và 20 bài hát tiếng anh siêu bổ ích.`,
       price: 200_000,
@@ -25,7 +25,7 @@ const Page = () => {
       key: 1,
       title: "Rối ngón tay gia đình 6 con",
       imageUrl:
-        "https://bizweb.dktcdn.net/thumb/grande/100/347/752/products/45cfcaa3d0e081ea2fc86017c5772752.jpg?v=1661165624673",
+        "/boroingontaygiadinh.png",
       category: "Hỗ trợ trẻ chậm nói, phát triển ngôn ngữ",
       description: `Bộ Rối Ngón Tay Gia Đình từ Sodial nằm trong danh mục những món đồ chơi có thể hỗ trợ trẻ chậm nói và phát triển ngôn ngữ. Với 6 nhân vật gia đình như ông, bà, cha, mẹ, anh, chị đầy đáng yêu giúp khuyến khích bé khám phá thế giới đầy màu sắc. Từ đó các bé có thể phát triển tư duy logic, khả năng ghi nhớ, các giác quan nhạy bén thông qua những câu chuyện đầy sinh động. Đồng thời, ba mẹ cũng có thể tham gia trò chuyện cùng bé để bé có thể cảm nhận được sự quan tâm của ba mẹ.`,
       price: 169_000,
@@ -34,7 +34,7 @@ const Page = () => {
       key: 2,
       title: "Bộ tập gắp chia màu montessori",
       imageUrl:
-        "https://bizweb.dktcdn.net/thumb/1024x1024/100/347/752/products/botapgap.png?v=1636285320630",
+        "/botapgaphatchiamau.png",
       category: "Hỗ trợ trẻ chậm nói, phát triển trí thông minh",
       description: `Bộ đồ chơi "Bộ tập gắp chia hạt màu Montessori" là lựa chọn lý tưởng giúp cho các bé có dấu hiệu tự kỷ phát triển trí thông minh và rèn luyện vận động tinh. Bộ sản phẩm bao gồm khay gỗ thiết kế các lỗ tròn để thả bi và câu cá, 76 viên bi gỗ nhiều màu sắc, các dụng cụ như muỗng, đũa, kẹp gỗ, và bộ số từ 0-9. Với trò chơi này, các bé có thể rèn luyện sự khéo léo, tập trung, nhận biết màu sắc, đếm số lượng và phát triển kỹ năng cần thiết một cách an toàn và hiệu quả.`,
       price: 123_000,
@@ -43,7 +43,7 @@ const Page = () => {
       key: 3,
       title: "Bộ xếp hình người thăng bằng",
       imageUrl:
-        "https://bizweb.dktcdn.net/thumb/grande/100/347/752/products/428220173-790509553095747-6103925536107115984-n.jpg?v=1708327718697",
+        "/xephinhnguoithangbang.png",
       category: "Đồ chơi trí tuệ, vận động",
       description: `Đồ chơi xếp hình thăng bằng hình người rạp xiếc vui nhộn cũng là một sản phẩm nằm trong danh mục đồ chơi vận động tinh, giúp trẻ tự kỷ rèn luyện tính kiên nhẫn và tăng cường sự sáng tạo. Bộ sản phẩm bao gồm 32 nhân vật, 32 sticker đôi và 4 quả bóng, mang lại những giờ phút vui vẻ cho bé và gia đình. Các bé có thể sáng tạo nhiều cách chơi khác nhau như domino, bowling, và nhập vai, tạo ra những trải nghiệm mới lạ và thú vị.`,
       price: 123_000,
@@ -52,7 +52,7 @@ const Page = () => {
       key: 4,
       title: `What 'Zit Puzzle`,
       imageUrl:
-        "https://autismcommunitystore.com/cdn/shop/products/whatzit-puzzle-fine-motor_500x.jpg?v=1630501905",
+        "/whatzpuzzle.png",
       category: "Đồ chơi trí tuệ, giải đố",
       description: `What 'Zit Puzzle là bộ trò chơi giải đố, trí tuệ giúp các bé có thể phát triển kỹ năng tư duy logic thông qua việc tiếp xúc với các mảnh đa màu sắc có thể đặt lại vào khay gỗ hoặc xếp thành cấu trúc. Với hơn 7 cách giải khác nhau và hình dạng thú vị tạo cho trẻ một không gian giải trí lành mạnh, tránh xa những trò chơi vô bổ trên điện thoại hay hàng giờ ngồi trước màn hình ti vi.`,
       price: 123_000,
@@ -61,7 +61,7 @@ const Page = () => {
       key: 5,
       title: `Take Along Railroad`,
       imageUrl:
-        "https://autismcommunitystore.com/cdn/shop/products/take_along_railroad_-_web_500x.jpg?v=1630506546",
+        "/takealongrailroad.png",
       category: "Phát triển kỹ năng vận động và tính độc lập",
       description: `Bộ đồ chơi Take Along Railroad với 17 mảnh ghép để nối lại thành một đường sắt đẹp mắt này là lựa chọn hoàn hảo cho trẻ tự kỷ, giúp phát triển kỹ năng vận động và tính tự lập. Với các tòa nhà, tàu hỏa, xe kiểm lâm và gondola, trẻ có thể dễ dàng sắp xếp và di chuyển chúng trên đường ray theo từng câu chuyện và trí tưởng tượng phong phú của trẻ.`,
       price: 123_000,
@@ -198,7 +198,7 @@ const Page = () => {
       </div>
       <Spacer y={36} />
       <div className="px-6 max-w-[1280px] m-auto">
-        <div className="text-2xl font-bold">Sản phẩm của chúng tôi</div>
+        <div className="text-2xl font-bold">Sản phẩm nổi bật</div>
         <Spacer y={12} />
         <div className="grid sm:grid-cols-3 gap-4">
           {products.map(({ category, description, imageUrl, title, key, price }) => (
