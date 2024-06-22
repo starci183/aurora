@@ -31,11 +31,6 @@ export const Navbar = () => {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="/cau-chuyen-cong-dong/do-choi-co-tac-dong-den-su-phat-trien-cua-tre-tu-ky-nhu-the-nao">
-                        Câu chuyện cộng đồng
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
                     <Link color="foreground" href="#">
                         Tải xuống
                     </Link>

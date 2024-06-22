@@ -94,126 +94,129 @@ const Page = () => {
           bình minh cho mọi đứa trẻ
         </div>
         <Spacer y={36} />
-        <div className="max-w-[1920px]  m-auto flex gap-12 px-6">
-          <div className="grid place-content-center max-w-[300px]">
-            <div>
-              <div className="text-2xl font-bold">
-                Chuyên gia nói gì về hội chứng tự kỉ?
+        <div className="bg-no-repeat bg-cover bg-center bg-[url('/aaaz.jpg')]">
+          <div className="max-w-[1920px] m-auto flex gap-12 px-6 py-12">
+            <div className="grid place-content-center max-w-[400px]">
+              <div>
+                <div className="text-2xl font-bold">
+                  Chuyên gia nói gì về hội chứng tự kỉ?
+                </div>
               </div>
+              <Spacer y={6} />
+              <div className="text-sm text-white">
+                "Hội chứng tự kỉ" là một rối loạn phát triển sớm ảnh hưởng đến
+                khả năng giao tiếp và tương tác xã hội của cá nhân. Các chuyên
+                gia thường chia sẻ kinh nghiệm về cách đưa ra các phương pháp
+                giáo dục và hỗ trợ thích hợp, nhằm giúp cá nhân phát triển kỹ
+                năng giao tiếp, xử lý cảm xúc và thích ứng trong cuộc sống hàng
+                ngày.
+              </div>
+              <Spacer y={6} />
+              <Button variant="flat" className="w-fit" color="primary">
+                {" "}
+                Về chúng tôi{" "}
+              </Button>
             </div>
-            <Spacer y={6} />
-            <div className="text-sm text-foreground-500">
-              "Hội chứng tự kỉ" là một rối loạn phát triển sớm ảnh hưởng đến khả
-              năng giao tiếp và tương tác xã hội của cá nhân. Các chuyên gia
-              thường chia sẻ kinh nghiệm về cách đưa ra các phương pháp giáo dục
-              và hỗ trợ thích hợp, nhằm giúp cá nhân phát triển kỹ năng giao
-              tiếp, xử lý cảm xúc và thích ứng trong cuộc sống hàng ngày.
-            </div>
-            <Spacer y={6} />
-            <Button variant="flat" className="w-fit" color="primary">
-              {" "}
-              Về chúng tôi{" "}
-            </Button>
+            <Card className="flex-1">
+              <CardBody className="p-6">
+                <Quote className="text-primary w-10 h-10" />
+                <Spacer y={2} /> `Khó khăn lớn nhất khi tư vấn cho các bậc phụ
+                huynh có con em bị tự kỷ là “nhiều gia đình họ khó đón nhận được
+                điều này hoàn toàn, họ không tiếp nhận được hai chữ tự kỷ, nhiều
+                thế hệ trong gia đình xung đột, có thế hệ chấp nhận nhưng cũng
+                có thế hệ chưa chấp nhận, phụ huynh không có nhiều thời gian
+                cùng con thực hiện các tương tác xã hội.`
+              </CardBody>
+              <CardFooter className="p-6 gap-6">
+                <Avatar
+                  isBordered
+                  className="w-32 h-32"
+                  src="https://askany.com/_next/image?url=https%3A%2F%2Fd2czqxs5dso3qv.cloudfront.net%2Fexperts%2Fb16adc5b-7f4c-4536-94f7-ff992b35f935.jpeg%3Fformat%3Dwebp&w=3840&q=75"
+                />
+                <div>
+                  <div className="text-xl">
+                    Chị{" "}
+                    <Link
+                      className="font-semibold text-xl text-foreground"
+                      href="https://askany.com/tam-ly-hoc-duong/1670819114694112"
+                    >
+                      Kim Nguyễn
+                    </Link>
+                  </div>
+                  <Spacer y={4} />
+                  <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex ">
+                    <div>
+                      <div className="flex gap-2">
+                        <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
+                        <div>
+                          Chuyên viên đào tạo hướng nghiệp Công ty TNHH Công
+                          nghệ và Đào tạo YOOT
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex gap-2">
+                        <BriefcaseIcon className="w-4 h-4 mt-0.5 min-w-4" />
+                        <div>Chuyên viên tham vấn tâm lý học đường</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+            <Card className="flex-1">
+              <CardBody className="p-6">
+                <Quote className="text-primary w-10 h-10" />
+                <Spacer y={2} /> `Có một số đặc điểm đặc biệt trong cách mà các
+                em thể hiện sự thông minh, thường là thông qua những lĩnh vực
+                như tính toán nhanh và thiên về sự tập trung vào một lĩnh vực mà
+                họ yêu thích, thường không thích tương tác xã hội và việc học từ
+                người khác có thể diễn ra chậm hơn. Đối với trẻ tự kỷ, hình ảnh
+                và màu sắc có vai trò quan trọng trong việc thu hút và tạo điều
+                kiện cho tương tác hiệu quả. Vì vậy, việc tạo ra các hình ảnh và
+                sử dụng màu sắc sáng sẽ giúp tránh sự mất tập trung. Đồng thời,
+                cần hạn chế sử dụng những hình thức, vật dụng có thể gây thương
+                tích, thay vào đó, ưu tiên sử dụng đồ chơi bằng gỗ được mài tròn
+                và không sắc nhọn.`
+              </CardBody>
+              <CardFooter className="p-6 gap-6">
+                <Avatar
+                  isBordered
+                  className="w-32 h-32"
+                  src="https://askany.com/_next/image?url=https%3A%2F%2Fd2czqxs5dso3qv.cloudfront.net%2Fexperts%2F1310b339-3c76-4e15-acd5-ce1437cc1841.jpeg%3Fformat%3Dwebp&w=3840&q=75"
+                />
+                <div>
+                  <div className="text-xl">
+                    Chị{" "}
+                    <Link
+                      className="font-semibold text-xl text-foreground"
+                      href="https://askany.com/tam-ly-tre-em/1692609864640149"
+                    >
+                      Nguyễn Hải Uyên
+                    </Link>
+                  </div>
+                  <Spacer y={4} />
+                  <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex">
+                    <div>
+                      <div className="flex gap-2">
+                        <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
+                        <div>Chuyên viên trẻ em tại bệnh viện Nhi đồng 2</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex gap-2">
+                        <BriefcaseIcon className="w-4 h-4 mt-0.5 min-w-4" />
+                        <div>
+                          Trưởng phòng tư vấn tâm lý tại trung tâm ứng dụng tâm
+                          lý JobWay
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
           </div>
-          <Card className="flex-1">
-            <CardBody className="p-6">
-              <Quote className="text-primary w-10 h-10" />
-              <Spacer y={2} /> `Khó khăn lớn nhất khi tư vấn cho các bậc phụ
-              huynh có con em bị tự kỷ là “nhiều gia đình họ khó đón nhận được
-              điều này hoàn toàn, họ không tiếp nhận được hai chữ tự kỷ, nhiều
-              thế hệ trong gia đình xung đột, có thế hệ chấp nhận nhưng cũng có
-              thế hệ chưa chấp nhận, phụ huynh không có nhiều thời gian cùng con
-              thực hiện các tương tác xã hội.`
-            </CardBody>
-            <CardFooter className="p-6 gap-6">
-              <Avatar
-                isBordered
-                className="w-40 h-40"
-                src="https://askany.com/_next/image?url=https%3A%2F%2Fd2czqxs5dso3qv.cloudfront.net%2Fexperts%2Fb16adc5b-7f4c-4536-94f7-ff992b35f935.jpeg%3Fformat%3Dwebp&w=3840&q=75"
-              />
-              <div>
-                <div className="text-xl">
-                  Chị{" "}
-                  <Link
-                    className="font-semibold text-xl text-foreground"
-                    href="https://askany.com/tam-ly-hoc-duong/1670819114694112"
-                  >
-                    Kim Nguyễn
-                  </Link>
-                </div>
-                <Spacer y={4} />
-                <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex ">
-                  <div>
-                    <div className="flex gap-2">
-                      <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
-                      <div>
-                        Chuyên viên đào tạo hướng nghiệp Công ty TNHH Công nghệ
-                        và Đào tạo YOOT
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex gap-2">
-                      <BriefcaseIcon className="w-4 h-4 mt-0.5 min-w-4" />
-                      <div>Chuyên viên tham vấn tâm lý học đường</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardFooter>
-          </Card>
-          <Card className="flex-1">
-            <CardBody className="p-6">
-              <Quote className="text-primary w-10 h-10" />
-              <Spacer y={2} /> `Có một số đặc điểm đặc biệt trong cách mà các em
-              thể hiện sự thông minh, thường là thông qua những lĩnh vực như
-              tính toán nhanh và thiên về sự tập trung vào một lĩnh vực mà họ
-              yêu thích, thường không thích tương tác xã hội và việc học từ
-              người khác có thể diễn ra chậm hơn. Đối với trẻ tự kỷ, hình ảnh và
-              màu sắc có vai trò quan trọng trong việc thu hút và tạo điều kiện
-              cho tương tác hiệu quả. Vì vậy, việc tạo ra các hình ảnh và sử
-              dụng màu sắc sáng sẽ giúp tránh sự mất tập trung. Đồng thời, cần
-              hạn chế sử dụng những hình thức, vật dụng có thể gây thương tích,
-              thay vào đó, ưu tiên sử dụng đồ chơi bằng gỗ được mài tròn và
-              không sắc nhọn.`
-            </CardBody>
-            <CardFooter className="p-6 gap-6">
-              <Avatar
-                isBordered
-                className="w-40 h-40"
-                src="https://askany.com/_next/image?url=https%3A%2F%2Fd2czqxs5dso3qv.cloudfront.net%2Fexperts%2F1310b339-3c76-4e15-acd5-ce1437cc1841.jpeg%3Fformat%3Dwebp&w=3840&q=75"
-              />
-              <div>
-                <div className="text-xl">
-                  Chị{" "}
-                  <Link
-                    className="font-semibold text-xl text-foreground"
-                    href="https://askany.com/tam-ly-tre-em/1692609864640149"
-                  >
-                    Nguyễn Hải Uyên
-                  </Link>
-                </div>
-                <Spacer y={4} />
-                <div className="text-sm italic text-foreground-500 max-w-[300px] gap-1 flex-col flex">
-                  <div>
-                    <div className="flex gap-2">
-                      <BriefcaseIcon className="w-4 h-4 min-w-4 mt-0.5" />
-                      <div>Chuyên viên trẻ em tại bệnh viện Nhi đồng 2</div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex gap-2">
-                      <BriefcaseIcon className="w-4 h-4 mt-0.5 min-w-4" />
-                      <div>
-                        Trưởng phòng tư vấn tâm lý tại trung tâm ứng dụng tâm lý
-                        JobWay
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardFooter>
-          </Card>
         </div>
       </div>
       <Spacer y={36} />

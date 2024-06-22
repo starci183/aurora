@@ -10,20 +10,20 @@ export const Footer = () => {
         <div className="md:flex grid gap-6 items-center justify-between">
           <div className="grid place-items-center">
             <Image
-              className="w-48 h-48"
+              className="w-60 h-60"
               removeWrapper
               src="/aurora-logo-full.svg"
             />
             <div className="flex gap-6">
               <Image
                 removeWrapper
-                className="w-24"
+                className="w-28"
                 radius="none"
                 src="/logo_appstore.png"
               />
               <Image
                 removeWrapper
-                className="w-24"
+                className="w-28"
                 radius="none"
                 src="/logo_playstore.png"
               />
