@@ -235,7 +235,7 @@ const Page = () => {
             />
           </div>
           <Spacer y={6} />
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 gap-6">
             {items[selected].toys.map((toy) => {
               return (
                 <Card isPressable>

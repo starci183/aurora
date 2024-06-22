@@ -1,8 +1,9 @@
 "use client"
 
 import { LayoutContext } from "@/app/_hooks"
-import { MoonIcon, SunIcon } from "@heroicons/react/24/outline"
-import { Button, Link, NavbarBrand, NavbarContent, NavbarItem, Navbar as NextUINavbar, Image, Switch } from "@nextui-org/react"
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline"
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid"
+import { Button, Link, NavbarBrand, NavbarContent, NavbarItem, Navbar as NextUINavbar, Image, Switch, Input } from "@nextui-org/react"
 import { useContext } from "react"
 
 export const Navbar = () => {
@@ -60,13 +61,8 @@ export const Navbar = () => {
                         }
                     />
                 </NavbarItem>
-                <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Đăng nhập</Link>
-                </NavbarItem>
                 <NavbarItem>
-                    <Button as={Link} color="primary" href="#" variant="flat">
-                        Đăng ký
-                    </Button>
+                    <Input placeholder="Bạn muốn tìm gì" startContent={<MagnifyingGlassIcon className="w-5 h-5" />}/>
                 </NavbarItem>
             </NavbarContent>
         </NextUINavbar>

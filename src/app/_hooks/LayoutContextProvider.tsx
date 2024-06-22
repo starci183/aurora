@@ -9,7 +9,7 @@ interface LayoutContextValue {
 export const LayoutContext = createContext<LayoutContextValue | null>(null)
 
 export const LayoutContextProvider = ({children}: {children: ReactNode}) => {
-    const darkModeState = useState(false)
+    const darkModeState = useState(true)
     return (
         <LayoutContext.Provider value={{states: {
             darkModeState
