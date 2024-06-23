@@ -53,7 +53,7 @@ export const ProductModal = ({
       <Card
         isPressable
         onMouseEnter={() => {
-          timeout = setTimeout(onOpen, 500);
+          timeout = setTimeout(onOpen, 1000);
         }}
         onClick={() => {
           onOpen();
