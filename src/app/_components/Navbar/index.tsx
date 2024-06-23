@@ -30,7 +30,7 @@ export const Navbar = () => {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/Aurora.apk">
                         Tải xuống
                     </Link>
                 </NavbarItem>
